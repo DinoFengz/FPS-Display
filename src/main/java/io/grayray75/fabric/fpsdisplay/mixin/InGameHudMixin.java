@@ -21,7 +21,7 @@ public class InGameHudMixin {
 
         if (!client.options.debugEnabled && config.enabled && config.textAlpha > 3 && FpsDisplayMod.SHOW_FPS_OVERLAY) {
 
-            String displayString = ((MinecraftClientMixin) client).getCurrentFPS() + " FPS";
+            String displayString = "§6" + ((MinecraftClientMixin) client).getCurrentFPS() + " §fFps";
             float textPosX = config.offsetLeft;
             float textPosY = config.offsetTop;
 
